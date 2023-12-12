@@ -1,13 +1,17 @@
 <script setup lang="ts">
-
+import TheNavbar from '../components/TheNavbar.vue'
 </script>
 
 <template>
-  <div class="py-10 text-2xl ">
-    This is home view
-    <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <TheNavbar />
+
+  <div class="bg-slate-200 pt-20">
+    <div class="container">
+      <h2 class="">Learn EDGE Cases</h2>
+    </div>
+   
+  </div>
+  <div class="">
+
   </div>
 </template>
-
