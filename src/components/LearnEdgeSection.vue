@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="bg-slate-100 pt-24 pb-10">
+  <div class="bg-slate-200 pt-24 pb-10">
     <div class="flex  px-10">
       <div class="">
         <h2 class="text-5xl text-slate-700 mb-5">Learn
@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="bg-emerald-400 w-48 h-48 rounded-full flex justify-center items-center relative bottom-10 ml-20">
-        <div class="bg-slate-100 w-28 h-28 rounded-full flex justify-center items-center">
+        <div class="bg-slate-200 w-28 h-28 rounded-full flex justify-center items-center">
           <span class="bg-slate-600 w-10 h-10 rounded-full"></span>
         </div>
       </div>
