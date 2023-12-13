@@ -3,7 +3,7 @@
 
 <template>
   <div class="bg-slate-200 pt-24 pb-10">
-    <div class="flex  px-10">
+    <div class="flex justify-between custom-container px-10">
       <div class="">
         <h2 class="text-5xl text-slate-700 mb-5 flex">Learn
           <div class="relative px-2">EDGE
@@ -31,9 +31,11 @@
           <span class="bg-emerald-400 cursor-pointer px-6 py-1 rounded-full text-slate-50 text-xs">search</span>
         </div>
       </div>
-      <div class="bg-emerald-400 w-48 h-48 rounded-full flex justify-center items-center relative bottom-10 ml-20">
-        <div class="bg-slate-200 w-28 h-28 rounded-full flex justify-center items-center">
-          <span class="bg-slate-600 w-10 h-10 rounded-full"></span>
+      <div class="bg-emerald-400 w-52 h-52 rounded-full flex justify-center items-center relative right-10 bottom-12">
+        <div class="bg-slate-200 w-32 h-32 rounded-full flex justify-center items-center">
+          <span class="bg-slate-600 w-16 h-16 rounded-full flex justify-center items-center">
+            <span class="bg-slate-400 w-4 h-4 rounded-full relative left-2 bottom-2"></span>
+          </span>
         </div>
       </div>
     </div>
@@ -41,7 +43,5 @@
 </template>
 
 <style>
-.custom-border {
-  border-radius: 100% 10% 10% 100% / 100% 100% 100% 100%;
-}
+/*  */
 </style>

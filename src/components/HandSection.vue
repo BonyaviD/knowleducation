@@ -3,7 +3,8 @@
 </script>
 
 <template>
-    <div class="w-full flex items-center py-8 px-10 bg-slate-100">
+  <div class=" bg-slate-100">
+    <div class="flex justify-between items-center py-8 custom-container px-10">
     <ul class="flex flex-col">
       <li class="w-52 h-24 flex items-center justify-between rounded-lg shadow-md px-2 mb-5 bg-slate-50">
         <div class="bg-yellow-100 relative w-16 h-16 rounded-full">
@@ -45,6 +46,8 @@
              </p>
     </div>
   </div>
+  </div>
+
 </template>
 
 <style>
