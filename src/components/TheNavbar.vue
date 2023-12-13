@@ -4,7 +4,7 @@
 
 <template>
   <nav class="px-8 py-5 fixed top-0">
-    <ul class="inline-flex items-center bg-gray-50 p-2 rounded-full">
+    <ul class="inline-flex items-center bg-gray-50 p-2 rounded-full shadow">
       <li class="flex items-center mr-8">
         <div class="border-8 border-emerald-400 rounded-full bg-slate-200 w-px h-px ml-4 mr-2 p-1.5">
           <span class="bg-slate-800 rounded-full w-1.5 h-1.5 flex"></span>

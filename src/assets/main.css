@@ -12,10 +12,10 @@
   src: url(./font/righteous/Righteous-Regular.woff);
 }
 
-/* .container {
-  margin: 0 auto;
-  max-width: 900px;
-} */
+.custom-container {
+margin: 0 auto;
+  max-width: 600px;
+}
 
 body {
   font-family: "righteous";
