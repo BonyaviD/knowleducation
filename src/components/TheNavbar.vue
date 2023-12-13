@@ -25,5 +25,5 @@
 </template>
 
 <style scoped>
-/* nav class px-8  */
+
 </style>

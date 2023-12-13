@@ -6,31 +6,31 @@
   <div class=" bg-slate-100">
     <div class="flex justify-between items-center py-8 custom-container px-10">
       <ul class="flex flex-col">
-        <li class="w-52 h-24 flex items-center justify-between rounded-lg shadow-md px-2 mb-5 bg-slate-50">
+        <li class="w-56 h-24 flex items-center justify-between rounded-lg shadow-md px-4 mb-5 bg-slate-50">
           <div class="bg-yellow-100 relative w-16 h-16 rounded-full">
             <img class="w-8 left-3 bottom-2 absolute" src="../assets/img/hand-0.png" alt="">
           </div>
           <div>
             <h4 class="text-sm text-slate-700">Zeroth reason</h4>
-            <span class="text-sm text-slate-400">Lorem ipsum dolor.</span>
+            <span class="text-xs text-slate-400">Lorem ipsum dolor.</span>
           </div>
         </li>
-        <li class="w-52 h-24 flex items-center justify-between rounded-lg shadow-md px-2 mb-5 bg-slate-50">
+        <li class="w-56 h-24 flex items-center justify-between rounded-lg shadow-md px-4 mb-5 bg-slate-50">
           <div class="bg-yellow-100 relative w-16 h-16 rounded-full">
             <img class="w-8 left-3 bottom-2 absolute" src="../assets/img/hand-1.png" alt="">
           </div>
           <div>
-            <h4 class="text-sm text-slate-700">Zeroth reason</h4>
-            <span class="text-sm text-slate-400">Lorem ipsum dolor.</span>
+            <h4 class="text-sm text-slate-700">First reason</h4>
+            <span class="text-xs text-slate-400">Lorem ipsum dolor.</span>
           </div>
         </li>
-        <li class="w-52 h-24 flex items-center justify-between rounded-lg shadow-md px-2 bg-slate-50">
+        <li class="w-56 h-24 flex items-center justify-between rounded-lg shadow-md px-4 bg-slate-50">
           <div class="bg-yellow-100 relative w-16 h-16 rounded-full">
             <img class="w-8 left-3.5 bottom-2 absolute" src="../assets/img/hand-2.png" alt="">
           </div>
           <div>
-            <h4 class="text-sm text-slate-700">Zeroth reason</h4>
-            <span class="text-sm text-slate-400">Lorem ipsum dolor.</span>
+            <h4 class="text-sm text-slate-700">Second reason</h4>
+            <span class="text-xs text-slate-400">Lorem ipsum dolor.</span>
           </div>
         </li>
 
@@ -45,7 +45,7 @@
             after:bg-slate-100"></span>
             <span class="right-moon absolute  before:bg-emerald-400
             after:bg-slate-100">
-          </span>
+            </span>
           </div>
           <h4 class="text-2xl text-slate-700 mb-5 relative z-10">others...!</h4>
         </div>
@@ -65,21 +65,20 @@
 </template>
 
 <style>
-
 .matn {
   width: 500px;
- 
+
 }
 
 
 .left-moon::before {
- content: '';
+  content: '';
   position: absolute;
   top: 0px;
   left: -2px;
   width: 16px;
-  height: 22px; 
-  border-radius: 100%; 
+  height: 22px;
+  border-radius: 100%;
   transform: rotate(30deg);
 }
 
@@ -93,19 +92,21 @@
   border-radius: 12px;
   transform: rotate(30deg);
 }
+
 .right-moon {
-top: 21px;
-left: 1px;
+  top: 21px;
+  left: 1px;
 
 }
+
 .right-moon::before {
- content: '';
+  content: '';
   position: absolute;
   top: 1px;
   left: -2px;
   width: 16px;
-  height: 22px; 
-  border-radius: 100%; 
+  height: 22px;
+  border-radius: 100%;
   transform: rotate(150deg);
 }
 
@@ -119,5 +120,4 @@ left: 1px;
   border-radius: 12px;
   transform: rotate(150deg);
 }
-
 </style>
