@@ -49,7 +49,7 @@
           </div>
           <h4 class="text-2xl text-slate-700 mb-5 relative z-10">others...!</h4>
         </div>
-        <p class="text-xs text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p class="text-xs text-slate-400 font-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Soluta fugiat est unde pariatur, excepturi ullam. Officiis
           quidem distinctio porro alias quam laboriosam animi minus
           architecto, tempora asperiores excepturi quo qui quas dignissimos
