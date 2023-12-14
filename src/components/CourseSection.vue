@@ -11,6 +11,9 @@ import LoadingCard from '../components/LoadingCourseCard.vue'
         <LoadedCard />
         <LoadedCard />
         <LoadedCard />
+        <LoadedCard />
+        <LoadedCard />
+        <LoadedCard />
         <LoadingCard />
         <LoadingCard />
         <LoadingCard />
