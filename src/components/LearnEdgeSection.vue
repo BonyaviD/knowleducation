@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import CircleShape from './CircleShape.vue';
 </script>
 
 <template>
@@ -31,13 +32,8 @@
           <span class="bg-emerald-400 cursor-pointer px-6 py-1 rounded-full text-slate-50 text-xs">search</span>
         </div>
       </div>
-      <div class="bg-emerald-400 w-52 h-52 rounded-full flex justify-center items-center relative right-10 bottom-12">
-        <div class="bg-slate-200 w-32 h-32 rounded-full flex justify-center items-center">
-          <span class="bg-slate-600 w-16 h-16 rounded-full flex justify-center items-center">
-            <span class="bg-slate-500 w-4 h-4 rounded-full relative left-2 bottom-2"></span>
-          </span>
-        </div>
-      </div>
+      <CircleShape />
+   
     </div>
   </div>
 </template>
