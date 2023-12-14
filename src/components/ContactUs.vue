@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import TheFooter from '../components/TheFooter.vue'
 import { ref } from 'vue';
 const form = ref({
   fullname: '',
@@ -58,7 +58,8 @@ form.value.messageStatus = true;
                 :class="form.nameStatus? 'hidden' : ''"
                 >Error</span>
               </div>
-              <input v-model="form.fullname" type="text" id="fullname" class="px-2 border rounded-md focus:border-emerald-500 outline-none">
+              <input v-model="form.fullname" type="text" id="fullname"
+               class="px-2 py-1 border rounded-md focus:border-emerald-500 outline-none text-slate-400">
             </div>
             <div class="flex flex-col">
               <div>
@@ -67,7 +68,7 @@ form.value.messageStatus = true;
               </div>
               <input v-model="form.email" type="email" id="email"
               :class="form.emailCorrect ? 'border focus:border-emerald-500' : 'border-red-400 focus:border-red-400'"
-                class="px-2 border rounded-md outline-none">
+                class="px-2 py-1 border rounded-md outline-none  text-slate-400">
             </div>
           </div>
           <div class="flex flex-col">
@@ -90,17 +91,9 @@ form.value.messageStatus = true;
         </div>
       </div>
     </div>
-    <div class="footer bg-emerald-400 mt-8 pt-1 h-20 rounded-t-3xl">
-      <div
-        class="footer-two group bg-slate-900 h-20 rounded-t-3xl flex items-center justify-center text-slate-400 text-xs">
-        <h4 class="test relative">
-          <span class="">Give me FIVE</span>
-          <img
-            class=" test absolute -top-1 -right-6 w-5 cursor-pointer group-hover:w-6 group-hover:-right-7 group-hover:-top-1.5 active:scale-75"
-            src="../assets/img/give-hand.png" alt="">
-        </h4>
-      </div>
-    </div>
+    
+    <TheFooter />
+ 
   </div>
 </template>
 
@@ -110,14 +103,11 @@ form.value.messageStatus = true;
   transform: scaleX(-1);
 }
 
-.test {
-  transition: all 0.1s ease-in-out;
+input {
+  width: 200px;
+  font-size: 0.8rem;
+  font-weight: 100;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.footer {
-  border-radius: 50% 50% 0 0;
-}
-
-.footer-two {
-  border-radius: 50% 50% 0 0;
-}</style>
+</style>
