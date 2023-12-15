@@ -43,7 +43,5 @@ onMounted(()=>{
 
 
 <style>
-/* .navbar {
-  transition: all 0.8s ease-in-out;
-} */
+
 </style>

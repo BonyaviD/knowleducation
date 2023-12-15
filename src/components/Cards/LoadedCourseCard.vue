@@ -11,7 +11,8 @@ const isVisible = ref(false)
 </script>
 
 <template>
-  <li class="bg-slate-100 pt-2 px-2.5 pb-4 w-56 rounded-xl" ref="target">
+  <li class="bg-slate-100 pt-2 px-2.5 pb-4 w-56 rounded-xl cursor-pointer 
+  transition-all ease-in-out duration-400 relative top-0 hover:relative hover:-top-2.5" ref="target">
     <div class="my-1 rounded flex items-center justify-center h-52 bg-slate-50">
       <span class="text-slate-300 text-4xl">IMAGE</span>
     </div>
