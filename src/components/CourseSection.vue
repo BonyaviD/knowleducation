@@ -53,11 +53,16 @@ watch(targetIsVisible, (val) => {
       <h2 class="text-2xl text-slate-600 mb-4">Our Courses</h2>
       <ul class="flex items-center flex-wrap gap-5">
         <LoadedCard/>
+        <LoadedCard />
+        <LoadedCard />
+        <LoadedCard />
+        <LoadedCard />
+        <LoadedCard />
         <li class="bg-slate-100 pt-2 px-2.5 pb-4 w-56 rounded-xl" v-if="!loading" v-for="card in state.cards"
-            :key="card.id">
+            :key="card['id']">
           <div class="my-1 rounded flex items-center justify-center h-52 bg-slate-50">
-            <span class="text-slate-300 text-4xl">{{ card.image }}</span></div>
-          <p class="text-slate-400 text-xs font-sans leading-5">{{ card.description }}</p>
+            <span class="text-slate-300 text-4xl">{{ card['image'] }}</span></div>
+          <p class="text-slate-400 text-xs font-sans leading-5">{{ card['description'] }}</p>
         </li>
         <li class="bg-slate-100 pt-2.5 px-2 pb-5 w-56 rounded-md" v-if="loading" v-for="(card, index) in new Array(6)"
             :key="index">
