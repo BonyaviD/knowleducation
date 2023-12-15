@@ -59,7 +59,8 @@ form.value.messageStatus = true;
                 >Error</span>
               </div>
               <input v-model="form.fullname" type="text" id="fullname"
-               class="bg-slate-50 px-2 py-1 border rounded-md focus:border-emerald-500 outline-none text-slate-400">
+               class="bg-slate-50 px-2 py-1 border rounded-md focus:border-emerald-500 outline-none text-slate-400
+               w-52	font-sans text-sm	">
             </div>
             <div class="flex flex-col">
               <div>
@@ -68,7 +69,9 @@ form.value.messageStatus = true;
               </div>
               <input v-model="form.email" type="email" id="email"
               :class="form.emailCorrect ? 'border focus:border-emerald-500' : 'border-red-400 focus:border-red-400'"
-                class="bg-slate-50 px-2 py-1 border rounded-md outline-none  text-slate-400">
+                class="bg-slate-50 px-2 py-1 border rounded-md outline-none  text-slate-400
+                w-52 font-sans text-sm	
+                ">
             </div>
           </div>
           <div class="flex flex-col">
@@ -78,7 +81,7 @@ form.value.messageStatus = true;
             </div>
             <textarea name="message" id="message" cols="40" rows="5" v-model="form.message"
             :class="form.messageStatus ? 'focus:border-emerald-500' : 'border-red-400 focus:border-red-400'"
-            class="bg-slate-50 px-2 outline-none border rounded-md font-sans text-slate-500">
+            class="bg-slate-50 px-2 outline-none border rounded-md font-sans text-sm	 text-slate-500">
           </textarea>
           </div>
           <div class="mt-4">
@@ -96,14 +99,3 @@ form.value.messageStatus = true;
  
   </div>
 </template>
-
-<style>
-
-input {
-  width: 200px;
-  font-size: 0.8rem;
-  font-weight: 100;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-</style>

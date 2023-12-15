@@ -6,7 +6,7 @@
   <div class=" bg-slate-100">
     <div class="flex justify-between items-center py-11 custom-container px-16">
       <ul class="flex flex-col">
-        <li class=" w-52 height flex items-center justify-between rounded-lg shadow-md px-4 mb-6 bg-slate-50 group">
+        <li class=" w-52 h-24 flex items-center justify-between rounded-lg shadow-md px-4 mb-6 bg-slate-50 group">
           <div class="bg-background relative w-16 h-16 rounded-full">
             <img class="transition-all duration-2000 ease-in-out w-8 left-3 bottom-2 absolute group-hover:-rotate-12" src="../assets/img/hand-0.png" alt="">
           </div>
@@ -15,7 +15,7 @@
             <span class="text-xs text-slate-400">Lorem ipsum dolor.</span>
           </div>
         </li>
-        <li class="w-52 height flex items-center justify-between rounded-lg shadow-md px-4 mb-6 bg-slate-50 group">
+        <li class="w-52 h-24 flex items-center justify-between rounded-lg shadow-md px-4 mb-6 bg-slate-50 group">
           <div class="bg-background relative w-16 h-16 rounded-full">
             <img class="transition-all duration-2000 ease-in-out w-8 left-3 bottom-2 absolute group-hover:-rotate-12" src="../assets/img/hand-1.png" alt="">
           </div>
@@ -24,7 +24,7 @@
             <span class="text-xs text-slate-400">Lorem ipsum dolor.</span>
           </div>
         </li>
-        <li class="w-52 height flex items-center justify-between rounded-lg shadow-md px-4 bg-slate-50 group">
+        <li class="w-52 h-24 flex items-center justify-between rounded-lg shadow-md px-4 bg-slate-50 group">
           <div class="bg-background relative w-16 h-16 rounded-full">
             <img class="transition-all duration-2000 ease-in-out w-8 left-3.5 bottom-2 absolute group-hover:-rotate-12" src="../assets/img/hand-2.png" alt="">
           </div>
@@ -70,9 +70,8 @@
 </template>
 
 <style>
-.height {
-  height: 100px;
-}
+
+
 .left-moon::before {
   content: '';
   position: absolute;

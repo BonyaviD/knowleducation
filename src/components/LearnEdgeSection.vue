@@ -36,7 +36,3 @@ import CircleShape from './CircleShape.vue';
     </div>
   </div>
 </template>
-
-<style>
-/*  */
-</style>
