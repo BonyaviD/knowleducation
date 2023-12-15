@@ -6,17 +6,7 @@ const root = ref(null)
 const target = ref(null)
 const isVisible = ref(false)
 
-const { isActive, pause, resume } = useIntersectionObserver(
-  target,
-  ([{ isIntersecting }]) => {
-    isVisible.value = isIntersecting
-  },
-  { root },
-)
 
-watch(()=>isVisible.value, ()=>{
-  console.log(isVisible.value)
-})
 
 </script>
 

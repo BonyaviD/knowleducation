@@ -1,69 +1,66 @@
+<script setup lang="ts">
+import {reactive, onMounted, ref, watch} from 'vue';
+import LoadedCard from './Cards/LoadedCourseCard.vue';
+import initServer from "@/mock";
+import {useIntersectionObserver} from "@vueuse/core";
 
- <script setup lang="ts">
- import LoadedCard from '../components/Cards/LoadedCourseCard.vue';
- import LoadingCard from '../components/Cards/LoadingCourseCard.vue';
+initServer();
 
- import { createServer } from "miragejs"
+const state = reactive({
+  cards: [],
+  loading: true,
+});
 
-createServer({
-  routes() {
-    this.namespace = "api"
+const loading = ref(false)
 
-    this.get("/cards", () => {
-      return {
-        cards: [
-          { id: 1, image: "IMAGE",
-           description: `Lorem ipsum, dolor sit amet this is consectetur adipisicing elit. 
-            dolor sit amet this is consectetur adipisic` },
-          { id: 2, image: "IMAGE", description: `Lorem ipsum, dolor sit amet this is consectetur adipisicing elit. 
-            dolor sit amet this is consectetur adipisic` },
-          { id: 3, image: "IMAGE", description: `Lorem ipsum, dolor sit amet this is consectetur adipisicing elit. 
-            dolor sit amet this is consectetur adipisic` },
-          { id: 4, image: "IMAGE", description: `Lorem ipsum, dolor sit amet this is consectetur adipisicing elit. 
-            dolor sit amet this is consectetur adipisic` },
-          { id: 5, image: "IMAGE", description: `Lorem ipsum, dolor sit amet this is consectetur adipisicing elit. 
-            dolor sit amet this is consectetur adipisic` },
-          { id: 6, image: "IMAGE", description: `Lorem ipsum, dolor sit amet this is consectetur adipisicing elit. 
-            dolor sit amet this is consectetur adipisic` },
-        ],
-      }
-    })
-  },
+const getCards = async () => {
+  try {
+    loading.value = true
+    const response = await fetch('/api/cards');
+    console.log(response)
+    const data = await response.json();
+    state.cards = data.cards;
+  } catch (error) {
+    console.error('Error fetching cards:', error);
+  } finally {
+    loading.value = false
+  }
+}
+
+const target = ref(null)
+const targetIsVisible = ref(false)
+
+const {isActive} = useIntersectionObserver(
+    target,
+    ([{isIntersecting}], observerElement) => {
+      targetIsVisible.value = isIntersecting
+    },
+    {
+      rootMargin: '-100px'
+    }
+)
+
+watch(targetIsVisible, (val) => {
+  console.log(val)
+  if (val)
+    getCards()
 })
-
- import { reactive, onMounted } from 'vue';
- import ref from 'vue'
- const state = reactive({
-   cards: [],
-   loading: true,
- });
- 
- onMounted(async () => {
-   try {
-     const response = await fetch('/api/cards');
-     const data = await response.json();
-     state.cards = data.cards;
-     state.loading = false;
-   } catch (error) {
-     console.error('Error fetching cards:', error);
-     state.loading = false;
-   }
- });
-
- </script>
+</script>
 
 <template>
-   <div class="py-10 bg-slate-200">
-     <div class="custom-container px-16">
-       <h2 class="text-2xl text-slate-600 mb-4">Our Courses</h2>
-       <ul class="flex items-center flex-wrap gap-5">
-        <LoadedCard />
-        <!-- <li class="bg-slate-100 pt-2 px-2.5 pb-4 w-56 rounded-xl" v-if="!state.loading" v-for="card in state.cards" :key="card.id">
+  <div class="py-10 bg-slate-200" ref="target">
+    <div class="custom-container px-16">
+      <h2 class="text-2xl text-slate-600 mb-4">Our Courses</h2>
+      <ul class="flex items-center flex-wrap gap-5">
+        <LoadedCard/>
+        <li class="bg-slate-100 pt-2 px-2.5 pb-4 w-56 rounded-xl" v-if="!loading" v-for="card in state.cards"
+            :key="card.id">
           <div class="my-1 rounded flex items-center justify-center h-52 bg-slate-50">
             <span class="text-slate-300 text-4xl">{{ card.image }}</span></div>
-          <p class="text-slate-400 text-xs font-sans leading-5">{{card.description}}</p>
-        </li> -->
-        <!-- <li class="bg-slate-100 pt-2.5 px-2 pb-5 w-56 rounded-md" v-if="state.loading" v-for="card in state.cards" :key="card.id">
+          <p class="text-slate-400 text-xs font-sans leading-5">{{ card.description }}</p>
+        </li>
+        <li class="bg-slate-100 pt-2.5 px-2 pb-5 w-56 rounded-md" v-if="loading" v-for="(card, index) in new Array(6)"
+            :key="index">
           <div class="mb-2 rounded flex items-center justify-center h-52 bg-slate-300"></div>
           <div class="flex flex-wrap gap-1">
             <span class="bg-slate-300 w-36 rounded-full h-4"></span>
@@ -74,11 +71,11 @@ createServer({
             <span class="bg-slate-300 w-20 h-4 rounded-full"></span>
             <span class="bg-slate-300 w-20 rounded-full h-4"></span>
           </div>
-        </li> -->
-       </ul>
-     </div>
-   </div>
- </template>
+        </li>
+      </ul>
+    </div>
+  </div>
+</template>
 
 
 
