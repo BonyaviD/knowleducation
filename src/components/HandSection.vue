@@ -4,10 +4,10 @@
 
 <template>
   <div class=" bg-slate-100">
-    <div class="flex justify-between items-center py-8 custom-container px-10">
+    <div class="flex justify-between items-center py-10 custom-container px-16">
       <ul class="flex flex-col">
-        <li class=" w-56 h-24 flex items-center justify-between rounded-lg shadow-md px-4 mb-5 bg-slate-50 group">
-          <div class="bg-yellow-100 relative w-16 h-16 rounded-full">
+        <li class=" w-56 h-28 flex items-center justify-between rounded-lg shadow-md px-4 mb-5 bg-slate-50 group">
+          <div class="bg-background relative w-16 h-16 rounded-full">
             <img class="transition-all duration-2000 ease-in-out w-8 left-3 bottom-2 absolute group-hover:-rotate-12" src="../assets/img/hand-0.png" alt="">
           </div>
           <div>
@@ -15,8 +15,8 @@
             <span class="text-xs text-slate-400">Lorem ipsum dolor.</span>
           </div>
         </li>
-        <li class="w-56 h-24 flex items-center justify-between rounded-lg shadow-md px-4 mb-5 bg-slate-50 group">
-          <div class="bg-yellow-100 relative w-16 h-16 rounded-full">
+        <li class="w-56 h-28 flex items-center justify-between rounded-lg shadow-md px-4 mb-5 bg-slate-50 group">
+          <div class="bg-background relative w-16 h-16 rounded-full">
             <img class="transition-all duration-2000 ease-in-out w-8 left-3 bottom-2 absolute group-hover:-rotate-12" src="../assets/img/hand-1.png" alt="">
           </div>
           <div>
@@ -24,8 +24,8 @@
             <span class="text-xs text-slate-400">Lorem ipsum dolor.</span>
           </div>
         </li>
-        <li class="w-56 h-24 flex items-center justify-between rounded-lg shadow-md px-4 bg-slate-50 group">
-          <div class="bg-yellow-100 relative w-16 h-16 rounded-full">
+        <li class="w-56 h-28 flex items-center justify-between rounded-lg shadow-md px-4 bg-slate-50 group">
+          <div class="bg-background relative w-16 h-16 rounded-full">
             <img class="transition-all duration-2000 ease-in-out w-8 left-3.5 bottom-2 absolute group-hover:-rotate-12" src="../assets/img/hand-2.png" alt="">
           </div>
           <div>
@@ -35,21 +35,24 @@
         </li>
 
       </ul>
-      <div class="matn">
-        <div class="flex">
-          <h4 class="text-2xl text-slate-700 mb-5 relative z-10">Choose knowleducation over</h4>
+      <div class="w-8/12">
+        <div class="flex mb-2">
+          <h4 class="text-2xl text-slate-600 relative z-10">Choose knowleducation over</h4>
           <div class="relative mx-2">
-            <span class="absolute bottom-11 -left-2 text-xl text-emerald-400 -rotate-45">ALL</span>
-            <span class="left-moon absolute top-5 -left-5
+            <span class="absolute bottom-6 -left-2 text-xl text-emerald-400 -rotate-45">ALL</span>
+            <span class="left-moon absolute top-4 -left-4
             before:bg-emerald-400
             after:bg-slate-100"></span>
-            <span class="right-moon absolute  before:bg-emerald-400
-            after:bg-slate-100">
+            <span class="right-moon absolute
+              before:bg-emerald-400
+            after:bg-slate-100 ">
+
             </span>
           </div>
-          <h4 class="text-2xl text-slate-700 mb-5 relative z-10">others...!</h4>
+          <h4 class="text-2xl text-slate-700 relative z-10">others...!</h4>
         </div>
-        <p class="text-xs text-slate-400 font-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p class="text-xs text-slate-400 font-sans leading-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Soluta fugiat est unde pariatur, excepturi ullam. Officiis
           quidem distinctio porro alias quam laboriosam animi minus
           architecto, tempora asperiores excepturi quo qui quas dignissimos
@@ -58,6 +61,8 @@
           labore voluptatem distinctio explicabo adipisci cupiditate ipsam
           dolorem placeat inventore, perspiciatis, vero doloremque dolorum
           sapiente illo delectus repellendus qui culpa temporibus vitae voluptates?
+          us repellendus qui culpa temporibus vitae voluptates?us repellendus 
+          qui culpa temporibus vitae voluptates?
         </p>
       </div>
     </div>
@@ -65,11 +70,6 @@
 </template>
 
 <style>
-.matn {
-  width: 500px;
-
-}
-
 
 .left-moon::before {
   content: '';
@@ -94,8 +94,8 @@
 }
 
 .right-moon {
-  top: 21px;
-  left: 1px;
+  top: 15px;
+  left: 4px;
 
 }
 

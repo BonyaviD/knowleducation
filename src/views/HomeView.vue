@@ -7,7 +7,7 @@ import ContactUs from '@/components/ContactUs.vue'
 </script>
 
 <template>
-  <TheNavbar />
+  <!-- <TheNavbar /> -->
   <LearnEdgeSection />
   <HandSection />
   <CourseSection />

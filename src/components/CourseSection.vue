@@ -4,10 +4,10 @@ import LoadingCard from '../components/LoadingCourseCard.vue'
 </script>
 
 <template>
-  <div class="py-8 bg-slate-200">
-    <div class="custom-container px-10">
-      <h2 class="text-xl text-slate-700 mb-5">Our Courses</h2>
-      <ul class="flex items-center flex-wrap gap-4">
+  <div class="py-10 bg-slate-200">
+    <div class="custom-container px-16">
+      <h2 class="text-2xl text-slate-600 mb-5">Our Courses</h2>
+      <ul class="flex items-center flex-wrap gap-5">
         <LoadedCard />
         <LoadedCard />
         <LoadedCard />

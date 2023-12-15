@@ -1,5 +1,5 @@
 <template>
-     <div class="footer bg-emerald-400 mt-8 pt-1 h-20 rounded-t-3xl">
+     <div class="footer bg-emerald-400 mt-16 pt-1 h-20 rounded-t-3xl">
       <div
         class="footer-two group bg-slate-900 h-20 rounded-t-3xl flex items-center justify-center text-slate-400 text-xs">
         <h4 class="relative">

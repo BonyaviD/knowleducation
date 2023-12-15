@@ -24,9 +24,9 @@ onMounted(() => {
 
 <template>
     <div ref="target"
-         class="bg-emerald-400 w-52 h-52 rounded-full flex justify-center items-center relative right-10 bottom-12">
-      <div class="bg-slate-200 w-32 h-32 rounded-full flex justify-center items-center relative" >
-      <span class="bg-slate-600 w-16 h-16 rounded-full flex justify-center items-center absolute"
+         class="bg-emerald-400 w-60 h-60 rounded-full flex justify-center items-center relative right-10 bottom-12">
+      <div class="bg-slate-200 w-36 h-36 rounded-full flex justify-center items-center relative" >
+      <span class="bg-slate-600 w-16 h-16 rounded-full flex justify-center items-center absolute top-4 left-14"
         ref="eye"
          :style="isOutside ? 'transition: all 0.3s' : `transform: translate3d(${x},${y}, 0px)`">
         <span class="bg-slate-500 w-4 h-4 rounded-full relative left-2 bottom-2"></span>
