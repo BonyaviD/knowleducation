@@ -3,7 +3,7 @@ import CircleShape from './CircleShape.vue';
 </script>
 
 <template>
-  <div class="bg-slate-200 pt-32 pb-8">
+  <div class="bg-slate-200 pt-32 pb-5">
     <div class="flex justify-between custom-container px-16">
       <div class="">
         <h2 class="text-5xl text-slate-600 mb-5 flex">Learn
@@ -16,7 +16,7 @@ import CircleShape from './CircleShape.vue';
             
           </div> Cases
         </h2>
-        <p class="text-xs text-slate-400 font-sans w-96 leading-7">
+        <p class="text-xs text-slate-400 font-sans w-96 leading-6">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Quos eos voluptate aliquam nesciunt
           hic iste laborum velit optio. Lorem ipsum dolor sit amet consectetur adipisicing elit.

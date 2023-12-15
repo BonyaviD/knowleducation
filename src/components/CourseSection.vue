@@ -6,7 +6,7 @@ import LoadingCard from '../components/LoadingCourseCard.vue'
 <template>
   <div class="py-10 bg-slate-200">
     <div class="custom-container px-16">
-      <h2 class="text-2xl text-slate-600 mb-5">Our Courses</h2>
+      <h2 class="text-2xl text-slate-600 mb-4">Our Courses</h2>
       <ul class="flex items-center flex-wrap gap-5">
         <LoadedCard />
         <LoadedCard />

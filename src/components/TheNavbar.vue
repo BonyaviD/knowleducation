@@ -5,7 +5,7 @@ import NavbarIcon from './NavbarIcon.vue';
 <template>
   <nav class="py-10 fixed top-0 z-20 w-full ">
     <div class="custom-container px-10">
-      <ul class="inline-flex bg-gray-50 px-3.5 py-3.5 rounded-full shadow-md">
+      <ul class="inline-flex bg-gray-50 px-3.5 py-3 rounded-full shadow-md">
         <NavbarIcon />
         <li class="flex items-center text-gray-400 font-sans">
           <span class="text-xs cursor-pointer mr-4">Courses</span>

@@ -44,7 +44,7 @@ form.value.messageStatus = true;
 
 
 <template>
-  <div class="bg-slate-100 pt-10">
+  <div class="bg-slate-100 pt-8">
     <div class="contact-us custom-container px-16">
       <h4 class="text-2xl text-slate-600 mb-4">Need any help...?</h4>
       <div class="div-one flex justify-between p-5 bg-slate-50 shadow-md rounded-md">
