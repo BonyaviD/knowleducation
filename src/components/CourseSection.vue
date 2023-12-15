@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import LoadedCard from './LoadedCourseCard.vue';
-import LoadingCard from '../components/LoadingCourseCard.vue'
+import LoadedCard from '../components/Cards/LoadedCourseCard.vue';
+import LoadingCard from '../components/Cards/LoadingCourseCard.vue'
 </script>
 
 <template>
@@ -25,4 +25,3 @@ import LoadingCard from '../components/LoadingCourseCard.vue'
   </div>
 </template>
 
-<style></style>

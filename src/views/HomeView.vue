@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TheNavbar from '../components/TheNavbar.vue'
+import TheNavbar from '../components/TheNavbar/TheNavbar.vue'
 import LearnEdgeSection from '../components/LearnEdgeSection.vue'
 import HandSection from '../components/HandSection.vue'
 import CourseSection from '../components/CourseSection.vue'
